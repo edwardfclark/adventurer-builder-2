@@ -6,6 +6,8 @@ import { BrowserRouter } from 'react-router-dom'
 import { basename } from 'config'
 import App from 'components/App'
 
+import 'bootstrap/dist/css/bootstrap.min.css'
+
 const renderApp = () => (
   <BrowserRouter basename={basename}>
     <App />
