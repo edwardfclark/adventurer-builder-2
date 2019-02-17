@@ -8,10 +8,10 @@ import TextInput from '../../atoms/TextInput/TextInput'
 const TextField = (props) => {
   return (
     <div className="row mb-1">
-      <div className="col">
+      <div className="col-3">
         <Label>{props.label}</Label>
       </div>
-      <div className="col">
+      <div className="col-9">
         <TextInput />
       </div>
     </div>
