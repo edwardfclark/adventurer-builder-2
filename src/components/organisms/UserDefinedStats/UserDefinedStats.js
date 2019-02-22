@@ -2,33 +2,34 @@ import React from 'react'
 import Information from '../Information/Information'
 import StatsArray from '../StatsArray/StatsArray'
 import Label from '../../atoms/Label/Label'
+import Card from '../../atoms/Card/Card'
 
 // UserDefinedStats expects the stats object as a property, which dynamically generates StatsArray.
 
 const UserDefinedStats = (props) => {
   return (
-    <div className="card">
-      <div className="card-header">
+    <Card>
+      <Card type="header">
         <Information />
-      </div>
-      <div className="card-body">
+      </Card>
+      <Card type="body">
         <StatsArray
           stats={props.stats}
           raceModActive={props.raceModActive}
         />
-      </div>
-      <div className="card-footer">
+      </Card>
+      <Card type="footer">
         <div className="row">
           <div className="col offset-6">
-            <Label>Points Cost:</Label>
+            <Label>Points:</Label>
           </div>
           <div className="col-3">
-                        ###
+            ###
           </div>
         </div>
-      </div>
+      </Card>
 
-    </div>
+    </Card>
   )
 }
 

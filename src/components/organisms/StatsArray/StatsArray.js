@@ -12,6 +12,7 @@ const StatsArray = (props) => {
         selectedStatVal={props.stats[stat].input}
         raceVal={props.stats[stat].race}
         raceModActive={props.raceModActive}
+        key={stat}
       />
     )
   })
