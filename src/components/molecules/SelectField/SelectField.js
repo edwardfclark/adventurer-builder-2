@@ -8,13 +8,13 @@ import Select from '../../atoms/Select/Select'
 // Pass a defaultValue to props.defaultVal
 
 const SelectField = (props) => {
-  const { label, defaultVal, options } = props
+  const { label, defaultVal, options, labelClass, inputClass } = props
   return (
     <div className="row mb-1">
-      <div className="col-3">
+      <div className={labelClass || "col-3"}>
         <Label>{label}</Label>
       </div>
-      <div className="col-9">
+      <div className={inputClass || "col-9"}>
         <Select defaultValue={defaultVal}>{options}</Select>
       </div>
     </div>
