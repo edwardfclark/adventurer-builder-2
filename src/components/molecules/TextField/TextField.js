@@ -6,13 +6,13 @@ import TextInput from '../../atoms/TextInput/TextInput'
 // The label property gives the label its text.
 
 const TextField = (props) => {
-  const { labelClass, inputClass } = props;
+  const { labelClass, inputClass } = props
   return (
     <div className="row mb-1">
-      <div className={labelClass || "col-3"}>
+      <div className={labelClass || 'col-3'}>
         <Label>{props.label}</Label>
       </div>
-      <div className={inputClass || "col-9"}>
+      <div className={inputClass || 'col-9'}>
         <TextInput />
       </div>
     </div>
